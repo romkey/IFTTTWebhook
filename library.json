@@ -1,0 +1,19 @@
+{
+    "name": "IFTTTWebhook",
+    "keywords": "ifttt, iot, webhook, event, trigger",
+    "description": "",
+    "repository": {
+	"type": "git",
+	"url": "https://github.com/romkey/IFTTTWebhook.git"
+    },
+    "version": "1.0.0",
+    "authors": {
+	"name": "John Romkey",
+	"email": "arduino@romkey.com",
+	"url": "https://romkey.com/"
+    },
+    "exclude": [
+    ],
+    "frameworks": "arduino",
+    "platforms": "*"
+}
