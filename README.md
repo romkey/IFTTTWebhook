@@ -34,7 +34,10 @@ IFTTTWeb webhook(YOUR_IFTTT_API_KEY, YOUR_IFTTT_EVENT_NAME);
 
 When you want to trigger the webhook, call the `trigger` method with zero to three `char*` to be passed as values:
 ```
-webhook.trigger("value", "value2", "value3");
+webhook.trigger();
+webhook.trigger("value1");
+webhook.trigger("value1", "value2");
+webhook.trigger("value1", "value2", "value3"); 
 ```
 
 You can trigger using the same webhook object as many times as you want.

@@ -1,19 +1,22 @@
 {
     "name": "IFTTTWebhook",
     "keywords": "ifttt, iot, webhook, event, trigger",
-    "description": "",
+    "description": "Library for triggering IFTTT web hooks. For use with ESP8266",
     "repository": {
 	"type": "git",
 	"url": "https://github.com/romkey/IFTTTWebhook.git"
     },
     "version": "1.0.0",
-    "authors": {
+    "authors": [
+	{
 	"name": "John Romkey",
 	"email": "arduino@romkey.com",
-	"url": "https://romkey.com/"
-    },
+        "url": "https://romkey.com/"
+	}
+    ],
     "exclude": [
     ],
+    "version": "1.0.0",
     "frameworks": "arduino",
-    "platforms": "esp8266"
+    "platforms": "espressif8266"
 }
