@@ -15,5 +15,5 @@
     "exclude": [
     ],
     "frameworks": "arduino",
-    "platforms": "*"
+    "platforms": "esp8266"
 }
