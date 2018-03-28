@@ -10,12 +10,12 @@
 
 class IFTTTWebhook {
  public:
-  IFTTTWebhook(char* api_key, char* event_name);
-  IFTTTWebhook(char* api_key, char* event_name, char* ifttt_fingerprint);
+  IFTTTWebhook(const char* api_key, const char* event_name);
+  IFTTTWebhook(const char* api_key, const char* event_name, const char* ifttt_fingerprint);
   
-  int trigger(char* value1, char* value2, char* value3);
-  int trigger(char* value1, char* value2);
-  int trigger(char* value1);
+  int trigger(const char* value1, const char* value2, const char* value3);
+  int trigger(const char* value1, const char* value2);
+  int trigger(const char* value1);
   int trigger();
   
  private:

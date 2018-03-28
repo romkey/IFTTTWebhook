@@ -8,10 +8,10 @@
 
 #include "IFTTTWebhook.h"
 
-IFTTTWebhook::IFTTTWebhook(char* api_key, char* event_name) : IFTTTWebhook::IFTTTWebhook(api_key, event_name, DEFAULT_IFTTT_FINGERPRINT) {
+IFTTTWebhook::IFTTTWebhook(const char* api_key, const char* event_name) : IFTTTWebhook::IFTTTWebhook(api_key, event_name, DEFAULT_IFTTT_FINGERPRINT) {
 }
 
-IFTTTWebhook::IFTTTWebhook(char* api_key, char* event_name, char* ifttt_fingerprint) {
+IFTTTWebhook::IFTTTWebhook(const char* api_key, const char* event_name, const char* ifttt_fingerprint) {
   _api_key = api_key;
   _event_name = event_name;
   _ifttt_fingerprint = ifttt_fingerprint;
@@ -21,17 +21,18 @@ int IFTTTWebhook::trigger() {
   return IFTTTWebhook::trigger(NULL, NULL, NULL);
 }
 
-int IFTTTWebhook::trigger(char* value1) {
+int IFTTTWebhook::trigger(const char* value1) {
   return IFTTTWebhook::trigger(value1, NULL, NULL);
 }
 
-int IFTTTWebhook::trigger(char* value1, char* value2) {
+int IFTTTWebhook::trigger(const char* value1, const char* value2) {
   return IFTTTWebhook::trigger(value1, value2, NULL);
 }
 
-int IFTTTWebhook::trigger(char* value1, char* value2, char* value3) {
+int IFTTTWebhook::trigger(const char* value1, const char* value2, const char* value3) {
   HTTPClient http;
   const char* ifttt_base = "https://maker.ifttt.com/trigger";
+
   int url_length = strlen(ifttt_base) + strlen("/") + strlen(_event_name) + strlen("/with/key/") + strlen(_api_key) + strlen("?") + (strlen("&valuex=")*3);
   url_length += (value1 ? strlen(value1) : 0) + (value2 ? strlen(value2) : 0) + (value3 ? strlen(value3) : 0);
   url_length += 5;

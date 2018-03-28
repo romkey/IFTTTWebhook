@@ -14,7 +14,7 @@ void setup() {
   WiFi.mode(WIFI_STA);
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 
-  IFTTTWebhook wh(IFTTT_API_KEY, IFTTT_WHENT_NAME);
+  IFTTTWebhook wh(IFTTT_API_KEY, IFTTT_EVENT_NAME);
   wh.trigger();
   wh.trigger("1");
   wh.trigger("1", "2");
