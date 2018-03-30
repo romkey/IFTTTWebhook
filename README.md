@@ -1,6 +1,7 @@
-# IFTTTWebHook ESP8266 library
+# IFTTTWebHook ESP8266/ESP32 library
 
-This is a small library that calls [IFTTT](https://ifttt.com) web hooks from your ESP8266 Arduino project.
+This is a small library that calls [IFTTT](https://ifttt.com) web
+hooks from your ESP8266 or ESP32 Arduino project.
 
 [IFTTT webhooks](https://ifttt.com/maker_webhooks) allow you to trigger IFTTT actions from your project. You might trigger an action because a button has been pushed, a temperature threshold has been passed, or just because you feel like it. You can pass up to three values with the trigger.
 
