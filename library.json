@@ -6,7 +6,7 @@
 	"type": "git",
 	"url": "https://github.com/romkey/IFTTTWebhook.git"
     },
-    "version": "1.0.1",
+    "version": "1.1.0",
     "authors": [
 	{
 	"name": "John Romkey",
@@ -16,7 +16,6 @@
     ],
     "exclude": [
     ],
-    "version": "1.0.0",
     "frameworks": "arduino",
-    "platforms": "espressif8266"
+    "platforms": [ "espressif8266", "espressif32" ]
 }
