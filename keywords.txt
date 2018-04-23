@@ -1,2 +1,2 @@
-IFTTTWebhook KEYWORD1
-trigger KEYWORD2 
+IFTTTWebhook	KEYWORD1
+trigger	KEYWORD2
