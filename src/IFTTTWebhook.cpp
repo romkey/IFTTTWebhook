@@ -141,3 +141,10 @@ int IFTTTWebhook::trigger(const char* value1, const char* value2, const char* va
 
     return httpCode != HTTP_CODE_OK;
   }
+
+
+// RFC 3986 reserved characters:
+// ! * ' ( ) ; : @ & = + $ , / ? # [ ]
+void IFTTTWebhook::_url_encode(char* original, char* encoded) {
+  
+}
